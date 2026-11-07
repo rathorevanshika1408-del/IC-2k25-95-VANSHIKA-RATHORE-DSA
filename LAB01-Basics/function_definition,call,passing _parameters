@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+void display()
+{
+     cout<<"hello"<<endl;
+}
+void sum(int a, int b)
+{
+	cout<<"sum = "<<a+b<<endl;
+}
+int multi(int a, int b)
+{
+	int c=a*b;
+	return c;
+	//return a*b;
+}
+
+void main()
+{      int p,q;
+       clrscr();
+       cout<<"before function calling"<<endl;
+       getch();
+       display();
+       getch();
+       cout<<"pls enter two numbers";
+       cin>>p>>q;
+       //sum(p,q);
+       int r=multi(p,q);
+       cout<<"multiplication="<<r<<endl;
+       cout<<"after function calling"<<endl;
+       getch();
+}
